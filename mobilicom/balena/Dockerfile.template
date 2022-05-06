@@ -1,0 +1,8 @@
+FROM balenalib/raspberrypi4-64-ubuntu-node
+ENV UDEV=on
+WORKDIR /app
+COPY . .
+RUN install_packages w3m w3m-img
+RUN npm install
+RUN sysctl net.ipv4.icmp_echo_ignore_broadcasts=0
+EXPOSE 2222
