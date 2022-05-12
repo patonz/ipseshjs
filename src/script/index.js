@@ -88,7 +88,7 @@ class IpsDevice {
     onReceiveMessage(fun) {
         socket.on('message', (msg, info) => {
             this.logDebug('Data received from remote : ' + msg.toString());
-            this.logDebug('Received %d bytes from %s:%d\n', msg.length, info.address, info.port);
+            this.logDebug(`Received ${msg.length} bytes from ${info.address}:${info.port}\n`);
             fun(msg, info)
         });
     }
