@@ -1,12 +1,12 @@
 {
-  "name": "mlesh",
-  "version": "1.0.0",
+  "name": "@patonz/ipseshjs",
+  "version": "0.0.1",
   "description": "",
   "main": "/script/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "patonz",
   "license": "ISC",
   "dependencies": {
     "broadcast-address": "^1.0.2",
